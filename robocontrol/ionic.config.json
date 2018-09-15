@@ -1,0 +1,7 @@
+{
+  "name": "robocontrol",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
