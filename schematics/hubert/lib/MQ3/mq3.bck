@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MQ-3
+D MQ-3 Breakout Board
+K mq-3
+$ENDCMP
+#
+#End Doc Library

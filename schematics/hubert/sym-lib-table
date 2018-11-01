@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name L6205N)(type Legacy)(uri ${KIPRJMOD}/lib/L6205N/L6205N.lib)(options "")(descr ""))
+  (lib (name mq3)(type Legacy)(uri C:/work/projects/roboexotica18/schematics/hubert/lib/MQ3/mq3.lib)(options "")(descr ""))
+)
