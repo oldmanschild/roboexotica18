@@ -12,7 +12,9 @@
 
 static const char DELIMITER[] = ";";
 
-void parseCommandPumpArgs();
+void parseCommandPump();
+void parseCommandAlco();
+void parseCommandAspirin();
 
 void readCommand(char cmd[]) {
 	char *token;
@@ -20,7 +22,13 @@ void readCommand(char cmd[]) {
 	token = strtok(cmd, DELIMITER);
 	while(token != NULL) {
 		if (strcmp(CMD_VERB_PUMP, token) == 0) {
-			parseCommandPumpArgs();
+			parseCommandPump();
+			token = strtok(NULL, DELIMITER);
+		} else if (strcmp(CMD_VERB_ALCO, token) == 0) {
+			parseCommandAlco();
+			token = strtok(NULL, DELIMITER);
+		} else if (strcmp(CMD_VERB_ASPR, token) == 0) {
+			parseCommandAspirin();
 			token = strtok(NULL, DELIMITER);
 		} else {
 			token = strtok(NULL, DELIMITER);
@@ -28,7 +36,7 @@ void readCommand(char cmd[]) {
 	}
 }
 
-void parseCommandPumpArgs() {
+void parseCommandPump() {
 	char* token;
 	short pumpNumber;
 	PumpConfig config = {};
@@ -47,4 +55,12 @@ void parseCommandPumpArgs() {
 
 	// trigger pump with configuration
 	triggerPump(pumpNumber, config);
+}
+
+void parseCommandAlco() {
+	measureAlcohol();
+}
+
+void parseCommandAspirin() {
+	dispenseAspirin();
 }
