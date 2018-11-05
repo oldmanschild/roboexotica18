@@ -16,8 +16,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 6850 3500 2    50   Input ~ 0
 LED7
-Text GLabel 5600 4400 3    50   Input ~ 0
-GND
 $Comp
 L Transistor_Array:ULN2003A U8
 U 1 1 5BDCC92A
@@ -33,8 +31,6 @@ Wire Wire Line
 	5850 4300 5600 4300
 Wire Wire Line
 	5600 4300 5600 4400
-Text GLabel 6500 3000 3    50   Input ~ 0
-GND
 Wire Wire Line
 	6250 3300 6250 2850
 Wire Wire Line
@@ -170,8 +166,6 @@ Wire Wire Line
 	5050 3600 4250 3600
 Wire Wire Line
 	5450 3500 4250 3500
-Text GLabel 4250 3250 1    50   Input ~ 0
-VDD
 Wire Wire Line
 	4250 3250 4250 3500
 Connection ~ 4250 3500
@@ -192,4 +186,37 @@ Wire Wire Line
 Connection ~ 4250 4000
 Wire Wire Line
 	4250 4000 4250 4100
+$Comp
+L power:+3.3V #PWR0127
+U 1 1 5BE2D2EF
+P 4250 3250
+F 0 "#PWR0127" H 4250 3100 50  0001 C CNN
+F 1 "+3.3V" H 4265 3423 50  0000 C CNN
+F 2 "" H 4250 3250 50  0001 C CNN
+F 3 "" H 4250 3250 50  0001 C CNN
+	1    4250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5BE2D328
+P 6500 3000
+F 0 "#PWR0128" H 6500 2750 50  0001 C CNN
+F 1 "GND" H 6505 2827 50  0000 C CNN
+F 2 "" H 6500 3000 50  0001 C CNN
+F 3 "" H 6500 3000 50  0001 C CNN
+	1    6500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5BE2D361
+P 5600 4400
+F 0 "#PWR0129" H 5600 4150 50  0001 C CNN
+F 1 "GND" H 5605 4227 50  0000 C CNN
+F 2 "" H 5600 4400 50  0001 C CNN
+F 3 "" H 5600 4400 50  0001 C CNN
+	1    5600 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
