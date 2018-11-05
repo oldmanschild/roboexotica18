@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title "Hubert"
-Date "2018-11-02"
-Rev "1.1"
+Date "2018-11-05"
+Rev "1.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -79,7 +79,7 @@ U 1 1 5BDB5573
 P 6150 2350
 F 0 "C18" V 6405 2350 50  0000 C CNN
 F 1 "47uF" V 6314 2350 50  0000 C CNN
-F 2 "" H 6188 2200 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6188 2200 50  0001 C CNN
 F 3 "~" H 6150 2350 50  0001 C CNN
 	1    6150 2350
 	0    -1   -1   0   

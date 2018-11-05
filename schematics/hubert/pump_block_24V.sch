@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 7
 Title "Hubert"
-Date "2018-11-02"
-Rev "1.1"
+Date "2018-11-05"
+Rev "1.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -24,7 +24,7 @@ AR Path="/5BDAC3DF/5BDB4D6C" Ref="U?"  Part="1"
 AR Path="/5BDAC585/5BDB4D6C" Ref="U7"  Part="1" 
 F 0 "U7" H 6800 4270 50  0000 C CNN
 F 1 "L6205N" H 6800 4179 50  0000 C CNN
-F 2 "DIP254P762X510-20" H 6800 3100 50  0001 L BNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 6800 3100 50  0001 L BNN
 F 3 "L6205N" H 6800 3100 50  0001 L BNN
 F 4 "Unavailable" H 6800 3100 50  0001 L BNN "Field4"
 F 5 "Driver; 52 v _Max._; Powerdip20; Pcb Mtg. Type; 5.6a o/p High Level; 2 Drivers" H 6800 3100 50  0001 L BNN "Field5"
@@ -87,7 +87,7 @@ AR Path="/5BDAC3DF/5BDAA85E" Ref="C?"  Part="1"
 AR Path="/5BDAC585/5BDAA85E" Ref="C17"  Part="1" 
 F 0 "C17" H 6015 2196 50  0000 L CNN
 F 1 "10nF" H 6015 2105 50  0000 L CNN
-F 2 "" H 5938 2000 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5938 2000 50  0001 C CNN
 F 3 "~" H 5900 2150 50  0001 C CNN
 	1    5900 2150
 	1    0    0    -1  
@@ -104,7 +104,7 @@ AR Path="/5BDAC3DF/5BDAA866" Ref="R?"  Part="1"
 AR Path="/5BDAC585/5BDAA866" Ref="R10"  Part="1" 
 F 0 "R10" H 5970 1896 50  0000 L CNN
 F 1 "100" H 5970 1805 50  0000 L CNN
-F 2 "" V 5830 1850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P25.40mm_Horizontal" V 5830 1850 50  0001 C CNN
 F 3 "~" H 5900 1850 50  0001 C CNN
 	1    5900 1850
 	1    0    0    -1  
@@ -149,7 +149,7 @@ AR Path="/5BDAC3DF/5BDAA87C" Ref="C?"  Part="1"
 AR Path="/5BDAC585/5BDAA87C" Ref="C16"  Part="1" 
 F 0 "C16" H 5765 2596 50  0000 L CNN
 F 1 "220nF" H 5765 2505 50  0000 L CNN
-F 2 "" H 5688 2400 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5688 2400 50  0001 C CNN
 F 3 "~" H 5650 2550 50  0001 C CNN
 	1    5650 2550
 	1    0    0    -1  
@@ -170,7 +170,7 @@ AR Path="/5BDAC3DF/5BDB4D74" Ref="C?"  Part="1"
 AR Path="/5BDAC585/5BDB4D74" Ref="C14"  Part="1" 
 F 0 "C14" H 4618 2596 50  0000 L CNN
 F 1 "100uF" H 4618 2505 50  0000 L CNN
-F 2 "" H 4538 2400 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4538 2400 50  0001 C CNN
 F 3 "~" H 4500 2550 50  0001 C CNN
 	1    4500 2550
 	1    0    0    -1  
@@ -193,7 +193,7 @@ AR Path="/5BDAC3DF/5BDAA893" Ref="C?"  Part="1"
 AR Path="/5BDAC585/5BDAA893" Ref="C13"  Part="1" 
 F 0 "C13" H 4165 2596 50  0000 L CNN
 F 1 "100nF" H 4165 2505 50  0000 L CNN
-F 2 "" H 4088 2400 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4088 2400 50  0001 C CNN
 F 3 "~" H 4050 2550 50  0001 C CNN
 	1    4050 2550
 	1    0    0    -1  
@@ -225,7 +225,7 @@ AR Path="/5BDAC3DF/5BDB4D77" Ref="C?"  Part="1"
 AR Path="/5BDAC585/5BDB4D77" Ref="C15"  Part="1" 
 F 0 "C15" H 4715 4246 50  0000 L CNN
 F 1 "5.6nF" H 4715 4155 50  0000 L CNN
-F 2 "" H 4638 4050 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4638 4050 50  0001 C CNN
 F 3 "~" H 4600 4200 50  0001 C CNN
 	1    4600 4200
 	1    0    0    -1  
@@ -240,7 +240,7 @@ AR Path="/5BDAC3DF/5BDAA8C4" Ref="R?"  Part="1"
 AR Path="/5BDAC585/5BDAA8C4" Ref="R9"  Part="1" 
 F 0 "R9" V 4643 4050 50  0000 C CNN
 F 1 "100K" V 4734 4050 50  0000 C CNN
-F 2 "" V 4780 4050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P25.40mm_Horizontal" V 4780 4050 50  0001 C CNN
 F 3 "~" H 4850 4050 50  0001 C CNN
 	1    4850 4050
 	0    1    1    0   
