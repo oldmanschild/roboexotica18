@@ -4,10 +4,10 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title "Hubert"
-Date "2018-10-31"
-Rev "1"
+Date "2018-11-02"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -21,8 +21,8 @@ P 6800 3100
 AR Path="/5BDB4D6C" Ref="U?"  Part="1" 
 AR Path="/5BDA8753/5BDB4D6C" Ref="U?"  Part="1" 
 AR Path="/5BDAC3DF/5BDB4D6C" Ref="U?"  Part="1" 
-AR Path="/5BDAC585/5BDB4D6C" Ref="U4"  Part="1" 
-F 0 "U4" H 6800 4270 50  0000 C CNN
+AR Path="/5BDAC585/5BDB4D6C" Ref="U7"  Part="1" 
+F 0 "U7" H 6800 4270 50  0000 C CNN
 F 1 "L6205N" H 6800 4179 50  0000 C CNN
 F 2 "DIP254P762X510-20" H 6800 3100 50  0001 L BNN
 F 3 "L6205N" H 6800 3100 50  0001 L BNN
@@ -32,21 +32,6 @@ F 6 "DIP-20 STMicroelectronics" H 6800 3100 50  0001 L BNN "Field6"
 F 7 "STMicroelectronics" H 6800 3100 50  0001 L BNN "Field7"
 F 8 "None" H 6800 3100 50  0001 L BNN "Field8"
 	1    6800 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BDB4D6D
-P 5900 4150
-AR Path="/5BDB4D6D" Ref="#PWR?"  Part="1" 
-AR Path="/5BDA8753/5BDB4D6D" Ref="#PWR?"  Part="1" 
-AR Path="/5BDAC3DF/5BDB4D6D" Ref="#PWR?"  Part="1" 
-AR Path="/5BDAC585/5BDB4D6D" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 5900 3900 50  0001 C CNN
-F 1 "GND" H 5905 3977 50  0000 C CNN
-F 2 "" H 5900 4150 50  0001 C CNN
-F 3 "" H 5900 4150 50  0001 C CNN
-	1    5900 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -82,8 +67,8 @@ P 5400 2000
 AR Path="/5BDAA856" Ref="D?"  Part="1" 
 AR Path="/5BDA8753/5BDAA856" Ref="D?"  Part="1" 
 AR Path="/5BDAC3DF/5BDAA856" Ref="D?"  Part="1" 
-AR Path="/5BDAC585/5BDAA856" Ref="D6"  Part="1" 
-F 0 "D6" V 5354 2079 50  0000 L CNN
+AR Path="/5BDAC585/5BDAA856" Ref="D9"  Part="1" 
+F 0 "D9" V 5354 2079 50  0000 L CNN
 F 1 "1N4148" V 5445 2079 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5400 1825 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5400 2000 50  0001 C CNN
@@ -116,8 +101,8 @@ P 5900 1850
 AR Path="/5BDAA866" Ref="R?"  Part="1" 
 AR Path="/5BDA8753/5BDAA866" Ref="R?"  Part="1" 
 AR Path="/5BDAC3DF/5BDAA866" Ref="R?"  Part="1" 
-AR Path="/5BDAC585/5BDAA866" Ref="R8"  Part="1" 
-F 0 "R8" H 5970 1896 50  0000 L CNN
+AR Path="/5BDAC585/5BDAA866" Ref="R10"  Part="1" 
+F 0 "R10" H 5970 1896 50  0000 L CNN
 F 1 "100" H 5970 1805 50  0000 L CNN
 F 2 "" V 5830 1850 50  0001 C CNN
 F 3 "~" H 5900 1850 50  0001 C CNN
@@ -142,8 +127,8 @@ P 4900 2000
 AR Path="/5BDAA873" Ref="D?"  Part="1" 
 AR Path="/5BDA8753/5BDAA873" Ref="D?"  Part="1" 
 AR Path="/5BDAC3DF/5BDAA873" Ref="D?"  Part="1" 
-AR Path="/5BDAC585/5BDAA873" Ref="D5"  Part="1" 
-F 0 "D5" V 4946 1921 50  0000 R CNN
+AR Path="/5BDAC585/5BDAA873" Ref="D8"  Part="1" 
+F 0 "D8" V 4946 1921 50  0000 R CNN
 F 1 "1N4148" V 4855 1921 50  0000 R CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4900 1825 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4900 2000 50  0001 C CNN
@@ -214,21 +199,6 @@ F 3 "~" H 4050 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4050 2400
-$Comp
-L power:GND #PWR?
-U 1 1 5BDAA89B
-P 4050 3100
-AR Path="/5BDAA89B" Ref="#PWR?"  Part="1" 
-AR Path="/5BDA8753/5BDAA89B" Ref="#PWR?"  Part="1" 
-AR Path="/5BDAC3DF/5BDAA89B" Ref="#PWR?"  Part="1" 
-AR Path="/5BDAC585/5BDAA89B" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 4050 2850 50  0001 C CNN
-F 1 "GND" H 4055 2927 50  0000 C CNN
-F 2 "" H 4050 3100 50  0001 C CNN
-F 3 "" H 4050 3100 50  0001 C CNN
-	1    4050 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4050 2700 4050 3000
 Wire Wire Line
@@ -261,29 +231,14 @@ F 3 "~" H 4600 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5BDAA8B8
-P 4600 4350
-AR Path="/5BDAA8B8" Ref="#PWR?"  Part="1" 
-AR Path="/5BDA8753/5BDAA8B8" Ref="#PWR?"  Part="1" 
-AR Path="/5BDAC3DF/5BDAA8B8" Ref="#PWR?"  Part="1" 
-AR Path="/5BDAC585/5BDAA8B8" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 4600 4100 50  0001 C CNN
-F 1 "GND" H 4605 4177 50  0000 C CNN
-F 2 "" H 4600 4350 50  0001 C CNN
-F 3 "" H 4600 4350 50  0001 C CNN
-	1    4600 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5BDAA8C4
 P 4850 4050
 AR Path="/5BDAA8C4" Ref="R?"  Part="1" 
 AR Path="/5BDA8753/5BDAA8C4" Ref="R?"  Part="1" 
 AR Path="/5BDAC3DF/5BDAA8C4" Ref="R?"  Part="1" 
-AR Path="/5BDAC585/5BDAA8C4" Ref="R7"  Part="1" 
-F 0 "R7" V 4643 4050 50  0000 C CNN
+AR Path="/5BDAC585/5BDAA8C4" Ref="R9"  Part="1" 
+F 0 "R9" V 4643 4050 50  0000 C CNN
 F 1 "100K" V 4734 4050 50  0000 C CNN
 F 2 "" V 4780 4050 50  0001 C CNN
 F 3 "~" H 4850 4050 50  0001 C CNN
@@ -349,4 +304,10 @@ NoConn ~ 7500 2400
 NoConn ~ 7500 2600
 Text GLabel 4050 2100 1    50   Input ~ 0
 VPUMP24
+Text GLabel 4600 4350 3    50   Input ~ 0
+GND
+Text GLabel 4050 3100 3    50   Input ~ 0
+GND
+Text GLabel 5900 4150 3    50   Input ~ 0
+GND
 $EndSCHEMATC

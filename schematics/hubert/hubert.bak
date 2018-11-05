@@ -4,10 +4,10 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "Hubert"
-Date "2018-10-31"
-Rev "1"
+Date "2018-11-02"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -78,10 +78,10 @@ F1 "alcohol_sensor.sch" 50
 F2 "AOUT" O L 4050 1100 50 
 $EndSheet
 $Comp
-L power:+24V #PWR?
+L power:+24V #PWR02
 U 1 1 5BD9B407
 P 9950 3800
-F 0 "#PWR?" H 9950 3650 50  0001 C CNN
+F 0 "#PWR02" H 9950 3650 50  0001 C CNN
 F 1 "+24V" H 9965 3973 50  0000 C CNN
 F 2 "" H 9950 3800 50  0001 C CNN
 F 3 "" H 9950 3800 50  0001 C CNN
@@ -89,10 +89,10 @@ F 3 "" H 9950 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR01
 U 1 1 5BD9B442
 P 9650 3800
-F 0 "#PWR?" H 9650 3650 50  0001 C CNN
+F 0 "#PWR01" H 9650 3650 50  0001 C CNN
 F 1 "+12V" H 9665 3973 50  0000 C CNN
 F 2 "" H 9650 3800 50  0001 C CNN
 F 3 "" H 9650 3800 50  0001 C CNN
@@ -100,10 +100,10 @@ F 3 "" H 9650 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR03
 U 1 1 5BD9B489
 P 10300 3950
-F 0 "#PWR?" H 10300 3700 50  0001 C CNN
+F 0 "#PWR03" H 10300 3700 50  0001 C CNN
 F 1 "GND" H 10305 3777 50  0000 C CNN
 F 2 "" H 10300 3950 50  0001 C CNN
 F 3 "" H 10300 3950 50  0001 C CNN
@@ -121,10 +121,10 @@ Wire Wire Line
 Text GLabel 9650 3900 3    50   Input ~ 0
 VPUMP12
 $Comp
-L Regulator_Linear:LM7805_TO220 U?
+L Regulator_Linear:LM7805_TO220 U4
 U 1 1 5BD9B5CD
 P 9150 4400
-F 0 "U?" V 9104 4505 50  0000 L CNN
+F 0 "U4" V 9104 4505 50  0000 L CNN
 F 1 "LM7805_TO220" V 9195 4505 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9150 4625 50  0001 C CIN
 F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 9150 4350 50  0001 C CNN
@@ -145,10 +145,10 @@ Connection ~ 9650 3850
 Wire Wire Line
 	9650 3850 9650 3900
 $Comp
-L Regulator_Linear:LM1117-3.3 U?
+L Regulator_Linear:LM1117-3.3 U3
 U 1 1 5BD9BFCF
 P 9150 3350
-F 0 "U?" V 9196 3454 50  0000 L CNN
+F 0 "U3" V 9196 3454 50  0000 L CNN
 F 1 "LM1117-3.3" V 9105 3454 50  0000 L CNN
 F 2 "" H 9150 3350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 9150 3350 50  0001 C CNN
@@ -218,4 +218,288 @@ Wire Wire Line
 	4050 4300 3300 4300
 Wire Wire Line
 	4050 4400 3300 4400
+Wire Wire Line
+	4050 4900 4000 4900
+Wire Wire Line
+	4000 4900 4000 4500
+Wire Wire Line
+	4000 4500 3300 4500
+Wire Wire Line
+	4050 5000 3950 5000
+Wire Wire Line
+	3950 5000 3950 4600
+Wire Wire Line
+	3950 4600 3300 4600
+Wire Wire Line
+	4050 5100 3900 5100
+Wire Wire Line
+	3900 5100 3900 4700
+Wire Wire Line
+	3900 4700 3300 4700
+Wire Wire Line
+	4050 5200 3850 5200
+Wire Wire Line
+	3850 5200 3850 4800
+Wire Wire Line
+	3850 4800 3300 4800
+Wire Wire Line
+	4050 5300 3800 5300
+Wire Wire Line
+	3800 5300 3800 4900
+Wire Wire Line
+	3800 4900 3300 4900
+Wire Wire Line
+	4050 5400 3750 5400
+Wire Wire Line
+	3750 5400 3750 5100
+Wire Wire Line
+	3750 5100 3300 5100
+$Comp
+L LED:WS2812B D1
+U 1 1 5BDC0E98
+P 6850 1700
+F 0 "D1" H 6850 2178 50  0000 C CNN
+F 1 "WS2812B" H 6850 2087 50  0000 C CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6900 1400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6950 1325 50  0001 L TNN
+	1    6850 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6850 2000 3    50   Input ~ 0
+GND
+$Comp
+L LED:WS2812B D2
+U 1 1 5BDC101F
+P 7450 1700
+F 0 "D2" H 7450 2178 50  0000 C CNN
+F 1 "WS2812B" H 7450 2087 50  0000 C CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7500 1400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7550 1325 50  0001 L TNN
+	1    7450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D3
+U 1 1 5BDC1047
+P 8050 1700
+F 0 "D3" H 8391 1746 50  0000 L CNN
+F 1 "WS2812B" H 8391 1655 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8100 1400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8150 1325 50  0001 L TNN
+	1    8050 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 2000 3    50   Input ~ 0
+GND
+Text GLabel 8050 2000 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6550 1700 3300 1700
+NoConn ~ 8350 1700
+Wire Wire Line
+	6850 1400 7450 1400
+Wire Wire Line
+	7450 1400 8050 1400
+Connection ~ 7450 1400
+Text GLabel 8050 1300 1    50   Input ~ 0
+VDD
+Wire Wire Line
+	8050 1400 8050 1300
+Connection ~ 8050 1400
+Text Notes 6650 1150 0    79   ~ 0
+LED-Strip
+Text Notes 8750 2750 0    79   ~ 0
+Power Unit
+Text Notes 2550 6300 0    79   ~ 0
+nRF52840 Development Board
+$Sheet
+S 6100 4750 550  800 
+U 5BDCC4DA
+F0 "Status LED" 50
+F1 "status_led.sch" 50
+F2 "LED7" I L 6100 4850 50 
+F3 "LED6" I L 6100 4950 50 
+F4 "LED5" I L 6100 5050 50 
+F5 "LED4" I L 6100 5150 50 
+F6 "LED3" I L 6100 5250 50 
+F7 "LED2" I L 6100 5350 50 
+F8 "LED1" I L 6100 5450 50 
+$EndSheet
+Text Label 5750 4850 2    50   ~ 0
+P1.11
+Wire Wire Line
+	5750 4850 6100 4850
+Text Label 3300 5200 0    50   ~ 0
+P1.11
+Text Label 3300 5300 0    50   ~ 0
+P1.12
+Text Label 3300 5400 0    50   ~ 0
+P1.13
+Text Label 3300 5500 0    50   ~ 0
+P1.14
+Text Label 3300 5600 0    50   ~ 0
+P1.15
+Wire Wire Line
+	6100 4950 5750 4950
+Wire Wire Line
+	6100 5050 5750 5050
+Wire Wire Line
+	6100 5150 5750 5150
+Wire Wire Line
+	6100 5250 5750 5250
+Wire Wire Line
+	6100 5350 5750 5350
+Wire Wire Line
+	6100 5450 5750 5450
+Text Label 5750 4950 2    50   ~ 0
+P1.12
+Text Label 5750 5050 2    50   ~ 0
+P1.13
+Text Label 5750 5150 2    50   ~ 0
+P1.14
+Text Label 5750 5250 2    50   ~ 0
+P1.15
+Text Label 5750 5350 2    50   ~ 0
+P0.26
+Text Label 5750 5450 2    50   ~ 0
+P0.27
+Text Label 3300 3400 0    50   ~ 0
+P0.26
+Text Label 3300 3500 0    50   ~ 0
+P0.27
+NoConn ~ 1200 600 
+NoConn ~ 1300 600 
+NoConn ~ 1400 600 
+NoConn ~ 700  1600
+NoConn ~ 1500 600 
+NoConn ~ 1600 600 
+NoConn ~ 1700 600 
+NoConn ~ 1800 600 
+NoConn ~ 2000 600 
+NoConn ~ 2100 600 
+NoConn ~ 2200 600 
+NoConn ~ 2400 600 
+NoConn ~ 2500 600 
+NoConn ~ 3300 900 
+NoConn ~ 3300 1000
+NoConn ~ 3300 1200
+NoConn ~ 3300 1300
+NoConn ~ 3300 1400
+NoConn ~ 3300 1600
+NoConn ~ 3300 1800
+NoConn ~ 3300 1900
+NoConn ~ 3300 2000
+NoConn ~ 3300 2100
+NoConn ~ 3300 3800
+NoConn ~ 3300 3700
+NoConn ~ 3300 3600
+NoConn ~ 3300 4100
+NoConn ~ 3300 5000
+NoConn ~ 3300 5800
+NoConn ~ 3300 5900
+NoConn ~ 2100 6200
+NoConn ~ 2000 6200
+NoConn ~ 700  5300
+NoConn ~ 700  5200
+NoConn ~ 700  5100
+NoConn ~ 700  3600
+NoConn ~ 700  3200
+$Comp
+L Isolator:LTV-827 U2
+U 1 1 5BE109BB
+P 6550 3000
+F 0 "U2" H 6550 3325 50  0000 C CNN
+F 1 "LTV-827" H 6550 3234 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6350 2800 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-70-96-0016/LTV-8X7%20series%20201610%20.pdf" H 6550 3000 50  0001 L CNN
+	1    6550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-827 U2
+U 2 1 5BE10A95
+P 6550 3900
+F 0 "U2" H 6550 4225 50  0000 C CNN
+F 1 "LTV-827" H 6550 4134 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6350 3700 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-70-96-0016/LTV-8X7%20series%20201610%20.pdf" H 6550 3900 50  0001 L CNN
+	2    6550 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 4100 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6850 4000 6950 4000
+Wire Wire Line
+	6950 4000 6950 4100
+Text GLabel 6950 3150 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6850 3100 6950 3100
+Wire Wire Line
+	6950 3100 6950 3150
+$Comp
+L Device:R R1
+U 1 1 5BE161E0
+P 7300 2900
+F 0 "R1" V 7093 2900 50  0000 C CNN
+F 1 "10K" V 7184 2900 50  0000 C CNN
+F 2 "" V 7230 2900 50  0001 C CNN
+F 3 "~" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BE16289
+P 7300 3800
+F 0 "R2" V 7093 3800 50  0000 C CNN
+F 1 "10K" V 7184 3800 50  0000 C CNN
+F 2 "" V 7230 3800 50  0001 C CNN
+F 3 "~" H 7300 3800 50  0001 C CNN
+	1    7300 3800
+	0    1    1    0   
+$EndComp
+Text Label 7000 2700 1    50   ~ 0
+P0.06
+Wire Wire Line
+	6850 2900 7000 2900
+Wire Wire Line
+	7000 2900 7000 2700
+Wire Wire Line
+	7000 2900 7150 2900
+Connection ~ 7000 2900
+Text Label 7000 3600 1    50   ~ 0
+P0.31
+Wire Wire Line
+	6850 3800 7000 3800
+Wire Wire Line
+	7000 3800 7000 3600
+Wire Wire Line
+	7150 3800 7000 3800
+Connection ~ 7000 3800
+Text GLabel 7650 3700 1    50   Input ~ 0
+VDD
+Wire Wire Line
+	7450 3800 7650 3800
+Wire Wire Line
+	7650 3800 7650 3700
+Text GLabel 7650 2800 1    50   Input ~ 0
+VDD
+Wire Wire Line
+	7450 2900 7650 2900
+Wire Wire Line
+	7650 2900 7650 2800
+Text HLabel 6250 2900 0    50   Input ~ 0
+OPTOIN1A
+Text HLabel 6250 3100 0    50   Output ~ 0
+OPTOIN1C
+Text HLabel 6250 3800 0    50   Input ~ 0
+OPTOIN2A
+Text HLabel 6250 4000 0    50   Output ~ 0
+OPTOIN2C
+Text Label 3300 1500 0    50   ~ 0
+P0.06
+Text Label 3300 3900 0    50   ~ 0
+P0.31
 $EndSCHEMATC

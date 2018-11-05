@@ -1,0 +1,195 @@
+EESchema Schematic File Version 4
+LIBS:hubert-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title "Hubert"
+Date "2018-11-02"
+Rev "1.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6850 3500 2    50   Input ~ 0
+LED7
+Text GLabel 5600 4400 3    50   Input ~ 0
+GND
+$Comp
+L Transistor_Array:ULN2003A U8
+U 1 1 5BDCC92A
+P 6250 3900
+F 0 "U8" H 6250 4474 50  0000 C CNN
+F 1 "ULN2003A" H 6250 4565 50  0000 C CNN
+F 2 "" H 6300 3350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 6350 3700 50  0001 C CNN
+	1    6250 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 4300 5600 4300
+Wire Wire Line
+	5600 4300 5600 4400
+Text GLabel 6500 3000 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6250 3300 6250 2850
+Wire Wire Line
+	6250 2850 6500 2850
+Wire Wire Line
+	6500 2850 6500 3000
+Wire Wire Line
+	6650 3500 6850 3500
+Wire Wire Line
+	6650 3600 6850 3600
+Text HLabel 6850 3600 2    50   Input ~ 0
+LED6
+Text HLabel 6850 3700 2    50   Input ~ 0
+LED5
+Text HLabel 6850 3800 2    50   Input ~ 0
+LED4
+Text HLabel 6850 3900 2    50   Input ~ 0
+LED3
+Text HLabel 6850 4000 2    50   Input ~ 0
+LED2
+Text HLabel 6850 4100 2    50   Input ~ 0
+LED1
+Wire Wire Line
+	6650 3700 6850 3700
+Wire Wire Line
+	6650 3800 6850 3800
+Wire Wire Line
+	6850 3900 6650 3900
+Wire Wire Line
+	6650 4000 6850 4000
+Wire Wire Line
+	6850 4100 6650 4100
+$Comp
+L Device:LED D15
+U 1 1 5BDCDA99
+P 5600 3500
+F 0 "D15" H 5592 3245 50  0000 C CNN
+F 1 "LED" H 5592 3336 50  0000 C CNN
+F 2 "" H 5600 3500 50  0001 C CNN
+F 3 "~" H 5600 3500 50  0001 C CNN
+	1    5600 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D13
+U 1 1 5BDCDD47
+P 5200 3600
+F 0 "D13" H 5192 3350 50  0000 C CNN
+F 1 "LED" H 5192 3450 50  0000 C CNN
+F 2 "" H 5200 3600 50  0001 C CNN
+F 3 "~" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 5BDCDD6F
+P 4800 3700
+F 0 "D11" H 4792 3450 50  0000 C CNN
+F 1 "LED" H 4792 3550 50  0000 C CNN
+F 2 "" H 4800 3700 50  0001 C CNN
+F 3 "~" H 4800 3700 50  0001 C CNN
+	1    4800 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D10
+U 1 1 5BDCDDB5
+P 4400 3800
+F 0 "D10" H 4392 3550 50  0000 C CNN
+F 1 "LED" H 4392 3650 50  0000 C CNN
+F 2 "" H 4400 3800 50  0001 C CNN
+F 3 "~" H 4400 3800 50  0001 C CNN
+	1    4400 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D16
+U 1 1 5BDCDDFF
+P 5600 3900
+F 0 "D16" H 5592 3650 50  0000 C CNN
+F 1 "LED" H 5592 3750 50  0000 C CNN
+F 2 "" H 5600 3900 50  0001 C CNN
+F 3 "~" H 5600 3900 50  0001 C CNN
+	1    5600 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D14
+U 1 1 5BDCDE27
+P 5200 4000
+F 0 "D14" H 5192 3750 50  0000 C CNN
+F 1 "LED" H 5192 3850 50  0000 C CNN
+F 2 "" H 5200 4000 50  0001 C CNN
+F 3 "~" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 5BDCDE70
+P 4800 4100
+F 0 "D12" H 4792 4223 50  0000 C CNN
+F 1 "LED" H 4792 4314 50  0000 C CNN
+F 2 "" H 4800 4100 50  0001 C CNN
+F 3 "~" H 4800 4100 50  0001 C CNN
+	1    4800 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 3500 5850 3500
+Wire Wire Line
+	5350 3600 5850 3600
+Wire Wire Line
+	4950 3700 5850 3700
+Wire Wire Line
+	5850 3900 5750 3900
+Wire Wire Line
+	5850 4000 5350 4000
+Wire Wire Line
+	5850 4100 4950 4100
+Wire Wire Line
+	4550 3800 5850 3800
+Wire Wire Line
+	4250 4100 4650 4100
+Wire Wire Line
+	5050 4000 4250 4000
+Wire Wire Line
+	5450 3900 4250 3900
+Wire Wire Line
+	4650 3700 4250 3700
+Wire Wire Line
+	5050 3600 4250 3600
+Wire Wire Line
+	5450 3500 4250 3500
+Text GLabel 4250 3250 1    50   Input ~ 0
+VDD
+Wire Wire Line
+	4250 3250 4250 3500
+Connection ~ 4250 3500
+Wire Wire Line
+	4250 3500 4250 3600
+Connection ~ 4250 3600
+Wire Wire Line
+	4250 3600 4250 3700
+Connection ~ 4250 3700
+Wire Wire Line
+	4250 3700 4250 3800
+Connection ~ 4250 3800
+Wire Wire Line
+	4250 3800 4250 3900
+Connection ~ 4250 3900
+Wire Wire Line
+	4250 3900 4250 4000
+Connection ~ 4250 4000
+Wire Wire Line
+	4250 4000 4250 4100
+$EndSCHEMATC

@@ -4,10 +4,10 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
-Title ""
-Date ""
-Rev ""
+Sheet 5 7
+Title "Hubert"
+Date "2018-11-02"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -31,17 +31,6 @@ Wire Wire Line
 	4700 2850 4700 2950
 Wire Wire Line
 	4700 2950 5100 2950
-$Comp
-L power:GND #PWR015
-U 1 1 5BDB44B8
-P 5500 4250
-F 0 "#PWR015" H 5500 4000 50  0001 C CNN
-F 1 "GND" H 5505 4077 50  0000 C CNN
-F 2 "" H 5500 4250 50  0001 C CNN
-F 3 "" H 5500 4250 50  0001 C CNN
-	1    5500 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 4050 5500 4150
 Wire Wire Line
@@ -106,17 +95,6 @@ Wire Wire Line
 Connection ~ 5700 2350
 Wire Wire Line
 	5700 2350 5700 2250
-$Comp
-L power:GND #PWR017
-U 1 1 5BDB595D
-P 6750 2350
-F 0 "#PWR017" H 6750 2100 50  0001 C CNN
-F 1 "GND" H 6755 2177 50  0000 C CNN
-F 2 "" H 6750 2350 50  0001 C CNN
-F 3 "" H 6750 2350 50  0001 C CNN
-	1    6750 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 2350 6750 2350
 Wire Wire Line
@@ -125,4 +103,10 @@ Text GLabel 5500 2250 1    50   Input ~ 0
 VDD
 Text GLabel 5700 2250 1    50   Input ~ 0
 VPUMP12
+Text GLabel 5500 4250 3    50   Input ~ 0
+GND
+Text GLabel 6750 2500 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6750 2500 6750 2350
 $EndSCHEMATC
