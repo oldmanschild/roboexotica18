@@ -13,7 +13,14 @@
 #include "protocol.h"
 
 int main(void) {
-	char a[] = "PUMP;1;12345;300";
-	readCommand(a);
+	char pump[] = "PUMP;1;12345;300";
+	readCommand(pump);
+
+	char alco[] = "ALCO";
+	readCommand(alco);
+
+	char aspr[] = "ASPR";
+	readCommand(aspr);
+
 	return EXIT_SUCCESS;
 }

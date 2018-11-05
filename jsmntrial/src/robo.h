@@ -18,4 +18,14 @@ typedef struct PumpConfig {
  */
 void triggerPump(int pumpNumber, PumpConfig config);
 
+/**
+ * Measures the current alcohol level.
+ */
+int measureAlcohol();
+
+/**
+ * Dispenses one dose of Aspirin.
+ */
+void dispenseAspirin();
+
 #endif /* ROBO_H_ */
